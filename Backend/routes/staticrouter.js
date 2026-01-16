@@ -14,4 +14,13 @@ router.get('/',async (req,res)=>{
         return res.status(500).send("Internal Server Error");
     }
 });
+
+router.get('/signup',(req,res)=>{
+    return res.render("signup");
+});
+
+router.get('/login',(req,res)=>{
+    return res.render("login");
+});
+
 module.exports = router;

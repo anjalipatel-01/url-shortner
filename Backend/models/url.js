@@ -1,4 +1,4 @@
-const {pool,connectDb} = require("../connection.js");
+const {pool} = require("../connection.js");
 
 async function createURL(shortid,redirecturl,id) {
     const querystring = `INSERT INTO urldata (shortid,redirecturl,created_by) VALUES ($1, $2, $3) RETURNING*;`;
